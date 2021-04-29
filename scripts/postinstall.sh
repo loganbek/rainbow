@@ -7,16 +7,25 @@ then
   cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/release.xcconfig
   cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/localrelease.xcconfig
   cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/staging.xcconfig
-  
-  cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
-  cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/release.xcconfig
-  cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
-  cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
 
-  cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
-  cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/release.xcconfig
-  cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
-  cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
+  # check BRANCH config
+  # echo ".env BRANCH -> config"
+  
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/release.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
+
+  # # check CODEPUSH config
+  # echo ".env CODEPUSH -> config"
+
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/release.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
+
+  # check GOOGLE config
+  # echo ".env GOOGLE -> config"
 
   echo "✅ .xcconfig files created"
 
