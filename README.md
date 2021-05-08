@@ -76,14 +76,14 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 
 ### NFT Video Player Options
 
-React Native Video Player
+**React Native Video Player**
 
 - <https://www.npmjs.com/package/react-native-video-player>
 - <https://github.com/cornedor/react-native-video-player>
 
 `npm install --save react-native-video`
 
-React Native Video
+**React Native Video**
 
 - <https://www.npmjs.com/package/react-native-video>
 - <https://github.com/react-native-video/react-native-video>
@@ -92,6 +92,8 @@ React Native Video
 
 ### NFT to Instagram
 
+**React Native Instagram Share + Story**
+
 <https://www.npmjs.com/package/react-native-instagram-share>
 `npm install react-native-instagram-share@latest --save`
 
@@ -99,3 +101,17 @@ React Native Video
 `npm install react-native-share-instagram-story`
 
 ### NFT to Airplay
+
+\*\* React Native Airplay Button iOS
+
+<https://www.npmjs.com/package/react-native-airplay-ios>
+`https://github.com/gazedash/react-native-airplay-ios`
+
+<https://www.npmjs.com/package/react-native-airplay-btn>
+`https://github.com/disjfa/react-native-airplay-btn`
+
+<https://github.com/wanaya/react-native-airplay>
+`npm i react-native-airplay --save`
+
+<https://github.com/mantaskaveckas/rn-airplay>
+`yarn add rn-airplay`
