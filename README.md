@@ -90,6 +90,12 @@ React Native Video
 
 `npm install --save react-native-video-player react-native-video react-native-vector-icons`
 
-### NFT to instagram
+### NFT to Instagram
+
+<https://www.npmjs.com/package/react-native-instagram-share>
+`npm install react-native-instagram-share@latest --save`
+
+<https://www.npmjs.com/package/react-native-share-instagram-story>
+`npm install react-native-share-instagram-story`
 
 ### NFT to Airplay
