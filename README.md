@@ -74,7 +74,21 @@ In order to build the application in "release" mode but not use the code push di
 
 Building the application with the `Staging` scheme or `Release` scheme will result in your bundle being replaced by the live code push deployment on resume of the application.
 
-### NFT Video Player
+### NFT Video Player Options
+
+React Native Video Player
+
+- <https://www.npmjs.com/package/react-native-video-player>
+- <https://github.com/cornedor/react-native-video-player>
+
+`npm install --save react-native-video`
+
+React Native Video
+
+- <https://www.npmjs.com/package/react-native-video>
+- <https://github.com/react-native-video/react-native-video>
+
+`npm install --save react-native-video-player react-native-video react-native-vector-icons`
 
 ### NFT to instagram
 
