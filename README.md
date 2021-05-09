@@ -90,6 +90,9 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 - <https://www.npmjs.com/package/react-native-video-player>
 - <https://github.com/cornedor/react-native-video-player>
 
+Tutorial
+- <https://betterprogramming.pub/add-video-to-your-react-native-app-using-react-native-video-f020e90059de>
+
 `npm install --save react-native-video-player react-native-video react-native-vector-icons`
 `yarn add react-native-video-player react-native-video react-native-vector-icons`
 
