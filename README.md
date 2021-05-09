@@ -81,28 +81,42 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 - <https://www.npmjs.com/package/react-native-video-player>
 - <https://github.com/cornedor/react-native-video-player>
 
-`npm install --save react-native-video`
+`npm install --save react-native-video-player react-native-video react-native-vector-icons`
+`yarn add react-native-video-player react-native-video react-native-vector-icons`
 
 **React Native Video**
 
 - <https://www.npmjs.com/package/react-native-video>
 - <https://github.com/react-native-video/react-native-video>
 
-`npm install --save react-native-video-player react-native-video react-native-vector-icons`
+`npm install --save react-native-video`
+`yarn add react-native-video`
 
 ### NFT to Instagram
 
 **React Native Instagram Share + Story**
 
 <https://www.npmjs.com/package/react-native-instagram-share>
+<https://github.com/watzak/react-native-instagram-share>
+
 `npm install react-native-instagram-share@latest --save`
 
+In XCode, in the project navigator, right click Libraries ➜ Add Files to [your project's name]
+Go to node_modules ➜ react-native-instagram-share and add RNInstagramShare.xcodeproj
+In XCode, in the project navigator, select your project. Add `libRNInstagramShare.a` to your project's Build Phases ➜ Link Binary With Libraries
+Click `RNInstagramShare.xcodeproj` in the project navigator and go the Build Settings tab. Make sure 'All' is toggled on (instead of 'Basic'). Look for Header Search Paths and make sure it contains both `$(SRCROOT)/../../react-native/React` and `$(SRCROOT)/../../../React` - mark both as recursive.
+Run your project (Cmd+R)
+
+**React Native Share Instagram Story**
+
 <https://www.npmjs.com/package/react-native-share-instagram-story>
+<https://github.com/appchoose/react-native-share-instagram-story>
 `npm install react-native-share-instagram-story`
+
 
 ### NFT to Airplay
 
-\*\* React Native Airplay Button iOS
+** React Native Airplay Button iOS **
 
 <https://www.npmjs.com/package/react-native-airplay-ios>
 `https://github.com/gazedash/react-native-airplay-ios`
