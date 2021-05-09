@@ -74,12 +74,24 @@ In order to build the application in "release" mode but not use the code push di
 
 Building the application with the `Staging` scheme or `Release` scheme will result in your bundle being replaced by the live code push deployment on resume of the application.
 
-### NFT Video Player Options
+# React Native
+
+<https://reactnative.dev/>
+
+# About NFT's
+
+<https://eips.ethereum.org/EIPS/eip-721>
+
+<https://ethereum.org/en/developers/docs/standards/tokens/erc-721/>
+
+## NFT Video Player Options
 
 **React Native Video**
 
 - <https://www.npmjs.com/package/react-native-video>
+
 - <https://github.com/react-native-video/react-native-video>
+
 - <https://npm.runkit.com/react-native-video-player>
 
 `npm install --save react-native-video`
@@ -88,19 +100,22 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 **React Native Video Player**
 
 - <https://www.npmjs.com/package/react-native-video-player>
+
 - <https://github.com/cornedor/react-native-video-player>
 
 Tutorial
+
 - <https://betterprogramming.pub/add-video-to-your-react-native-app-using-react-native-video-f020e90059de>
 
 `npm install --save react-native-video-player react-native-video react-native-vector-icons`
 `yarn add react-native-video-player react-native-video react-native-vector-icons`
 
-### NFT to Instagram
+## NFT to Instagram
 
 **React Native Instagram Share + Story**
 
 <https://www.npmjs.com/package/react-native-instagram-share>
+
 <https://github.com/watzak/react-native-instagram-share>
 
 `npm install react-native-instagram-share@latest --save`
@@ -114,11 +129,12 @@ Run your project (Cmd+R)
 **React Native Share Instagram Story**
 
 <https://www.npmjs.com/package/react-native-share-instagram-story>
+
 <https://github.com/appchoose/react-native-share-instagram-story>
+
 `npm install react-native-share-instagram-story`
 
-
-### NFT to Airplay
+## NFT to Airplay
 
 ** React Native Airplay Button iOS **
 
