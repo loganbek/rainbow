@@ -76,6 +76,15 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 
 ### NFT Video Player Options
 
+**React Native Video**
+
+- <https://www.npmjs.com/package/react-native-video>
+- <https://github.com/react-native-video/react-native-video>
+- <https://npm.runkit.com/react-native-video-player>
+
+`npm install --save react-native-video`
+`yarn add react-native-video`
+
 **React Native Video Player**
 
 - <https://www.npmjs.com/package/react-native-video-player>
@@ -83,14 +92,6 @@ Building the application with the `Staging` scheme or `Release` scheme will resu
 
 `npm install --save react-native-video-player react-native-video react-native-vector-icons`
 `yarn add react-native-video-player react-native-video react-native-vector-icons`
-
-**React Native Video**
-
-- <https://www.npmjs.com/package/react-native-video>
-- <https://github.com/react-native-video/react-native-video>
-
-`npm install --save react-native-video`
-`yarn add react-native-video`
 
 ### NFT to Instagram
 
