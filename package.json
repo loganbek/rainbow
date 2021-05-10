@@ -401,7 +401,8 @@
       "react-query": false,
       "secp256k1": false,
       "@sentry/cli": false,
-      "Rainbow": false
+      "Rainbow": false,
+      "postinstall-postinstall": false
     }
   }
 }
