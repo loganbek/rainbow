@@ -168,9 +168,9 @@ PODS:
     - libwebp/demux
   - libwebp/webp (1.1.0)
   - lottie-ios (3.1.8)
-  - lottie-react-native (3.5.0):
+  - lottie-react-native (4.0.2):
     - lottie-ios (~> 3.1.8)
-    - React
+    - React-Core
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
@@ -392,7 +392,6 @@ PODS:
     - React
     - RNInputMask
   - react-native-udp (2.7.0):
-    - CocoaAsyncSocket
     - React
   - react-native-version-number (0.3.6):
     - React
@@ -588,7 +587,6 @@ PODS:
     - React
   - SSZipArchive (2.2.3)
   - TcpSockets (3.3.2):
-    - CocoaAsyncSocket
     - React
   - TOCropViewController (2.5.5)
   - ToolTipMenu (5.2.1):
@@ -978,7 +976,7 @@ SPEC CHECKSUMS:
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
-  lottie-react-native: 1fb4ce21d6ad37dab8343eaff8719df76035bd93
+  lottie-react-native: 4dff8fe8d10ddef9e7880e770080f4a56121397e
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   PanModal: 421fe72d4af5b7e9016aaa3b4db94a2fb71756d3
@@ -1013,7 +1011,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: 13004a45f3021328fdd9ee1f987c3131fb65928d
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   react-native-text-input-mask: 07227297075f9653315f43b0424d596423a01736
-  react-native-udp: 96a517e5a121cfe69f4b05eeeafefe00c623debf
+  react-native-udp: ff9d13e523f2b58e6bc5d4d32321ac60671b5dc9
   react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
   react-native-video: 0bb76b6d6b77da3009611586c7dbf817b947f30e
   react-native-video-cache: 0f8b1b2195f234eabd507cfebdd91c2e82695008
@@ -1066,7 +1064,7 @@ SPEC CHECKSUMS:
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SRSRadialGradient: a372b4b3bc65a2f3b1a16b906485cff204e1db3e
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
-  TcpSockets: bd31674146c0931a064fc254a59812dfd1a73ae0
+  TcpSockets: 14306fb79f9750ea7d2ddd02d8bed182abb01797
   TOCropViewController: da59f531f8ac8a94ef6d6c0fc34009350f9e8bfe
   ToolTipMenu: 8ac61aded0fbc4acfe7e84a7d0c9479d15a9a382
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
