@@ -164,6 +164,9 @@ export SDKROOT\=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimul
 
 may need to switch build setting
 
-```
+This morning, after upgrading to XCode 12.5, I received this error too.
+I already had lottie-react-native installed, but the following worked for me.
 
-```
+My solution was to run yarn add lottie-react-native, then move in ios folder and run pod install
+
+<https://github.com/lottie-react-native/lottie-react-native/issues/755>
