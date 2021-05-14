@@ -170,3 +170,11 @@ I already had lottie-react-native installed, but the following worked for me.
 My solution was to run yarn add lottie-react-native, then move in ios folder and run pod install
 
 <https://github.com/lottie-react-native/lottie-react-native/issues/755>
+
+ld: 144 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+https://stackoverflow.com/questions/24298144/duplicate-symbols-for-architecture-x86-64-under-xcode
+
+pod deintegrate
+pod install
