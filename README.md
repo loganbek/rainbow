@@ -178,3 +178,7 @@ https://stackoverflow.com/questions/24298144/duplicate-symbols-for-architecture-
 
 pod deintegrate
 pod install
+
+switch development team to personal
+
+try removing -ObjC from linker flag in staging
