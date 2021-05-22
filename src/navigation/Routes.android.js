@@ -18,6 +18,7 @@ import RestoreSheet from '../screens/RestoreSheet';
 import SavingsSheet from '../screens/SavingsSheet';
 import SendSheet from '../screens/SendSheet';
 import SettingsModal from '../screens/SettingsModal';
+import ShowcaseSheet from '../screens/ShowcaseSheet';
 import SpeedUpAndCancelSheet from '../screens/SpeedUpAndCancelSheet';
 import TransactionConfirmationScreen from '../screens/TransactionConfirmationScreen';
 import WalletConnectApprovalSheet from '../screens/WalletConnectApprovalSheet';
@@ -128,7 +129,11 @@ function MainNavigator() {
       <Stack.Screen
         component={ExpandedAssetSheet}
         name={Routes.EXPANDED_ASSET_SHEET}
-        options={expandedPreset}
+        options={args =>
+          args?.route?.params?.type === 'token'
+            ? sheetPresetWithSmallGestureResponseDistance(args)
+            : sheetPreset(args)
+        }
       />
       <Stack.Screen
         component={ExpandedAssetSheet}
@@ -258,15 +263,6 @@ function MainOuterNavigator() {
       />
       <OuterStack.Screen
         component={ExpandedAssetSheet}
-        name={Routes.EXPANDED_ASSET_SCREEN}
-        options={args =>
-          args?.route?.params?.type === 'token'
-            ? sheetPresetWithSmallGestureResponseDistance(args)
-            : sheetPreset(args)
-        }
-      />
-      <OuterStack.Screen
-        component={ExpandedAssetSheet}
         name={Routes.TOKEN_INDEX_SCREEN}
         options={expandedPresetWithSmallGestureResponseDistance}
       />
@@ -299,6 +295,13 @@ function BSNavigator() {
       <BSStack.Screen
         component={SendFlowNavigator}
         name={Routes.SEND_SHEET_NAVIGATOR}
+      />
+      <BSStack.Screen
+        component={ShowcaseSheet}
+        name={Routes.SHOWCASE_SHEET}
+        options={{
+          height: '90%',
+        }}
       />
     </BSStack.Navigator>
   );
