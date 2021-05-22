@@ -482,11 +482,7 @@
 				A4451ED5032E4036E311CE0C /* [CP-User] [RNFB] Crashlytics Configuration */,
 				9FF961FEA7AF435FA18ED988 /* Upload Debug Symbols to Sentry */,
 				668ADB3225A4E3A40050859D /* Embed App Extensions */,
-<<<<<<< HEAD
-				4F65DB7605429104B13BD5C0 /* [CP] Embed Pods Frameworks */,
-=======
 				793E10FC2D2DE55DE5BE1675 /* [CP] Embed Pods Frameworks */,
->>>>>>> 83fa5cf340d8718ff07ad0e50715bbf78328a107
 			);
 			buildRules = (
 			);
