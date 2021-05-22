@@ -20,6 +20,7 @@ import RestoreSheet from '../screens/RestoreSheet';
 import SavingsSheet from '../screens/SavingsSheet';
 import SendSheet from '../screens/SendSheet';
 import SettingsModal from '../screens/SettingsModal';
+import ShowcaseScreen from '../screens/ShowcaseSheet';
 import SpeedUpAndCancelSheet from '../screens/SpeedUpAndCancelSheet';
 import TransactionConfirmationScreen from '../screens/TransactionConfirmationScreen';
 import WalletConnectApprovalSheet from '../screens/WalletConnectApprovalSheet';
@@ -32,6 +33,7 @@ import {
   backupSheetConfig,
   defaultScreenStackOptions,
   expandedAssetSheetConfig,
+  expandedAssetSheetConfigWithLimit,
   nativeStackDefaultConfig,
   nativeStackDefaultConfigWithoutStatusBar,
   restoreSheetConfig,
@@ -250,17 +252,24 @@ function NativeStackNavigator() {
       <NativeStack.Screen
         component={ExpandedAssetSheet}
         name={Routes.EXPANDED_ASSET_SHEET}
-        {...expandedAssetSheetConfig}
+        {...expandedAssetSheetConfigWithLimit}
+      />
+      <NativeStack.Screen
+        component={ShowcaseScreen}
+        name={Routes.SHOWCASE_SHEET}
+        options={{
+          customStack: true,
+        }}
       />
       <NativeStack.Screen
         component={ExpandedAssetSheet}
         name={Routes.EXPANDED_ASSET_SHEET_POOLS}
-        {...expandedAssetSheetConfig}
+        {...expandedAssetSheetConfigWithLimit}
       />
       <NativeStack.Screen
         component={ExpandedAssetSheet}
         name={Routes.TOKEN_INDEX_SHEET}
-        {...expandedAssetSheetConfig}
+        {...expandedAssetSheetConfigWithLimit}
       />
       <NativeStack.Screen
         component={SpeedUpAndCancelSheet}
