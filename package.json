@@ -412,7 +412,6 @@
   },
   "lavamoat": {
     "allowScripts": {
-      "Rainbow": false,
       "@scarf/scarf": false,
       "@lavamoat/preinstall-always-fail": false,
       "core-js": false,
@@ -423,9 +422,9 @@
       "keccak": false,
       "react-native-storage": false,
       "react-query": false,
-      "scrypt": false,
       "secp256k1": false,
-      "@sentry/cli": false
+      "@sentry/cli": false,
+      "Rainbow": false
     }
   }
 }

@@ -8,14 +8,14 @@ PLATFORM=$(uname -s)
 GLOBAL_NPM_SCRIPTS=( "patch-package" "rn-nodeify" )
 GLOBAL_NPM_MISSING=()
 
-# For each package, add it to the GLOBAL_NPM_MISSING array if it is not globally
-# available using the canonical cross-platform method.
-for script in ${GLOBAL_NPM_SCRIPTS[@]}
-do
-  if [ ! -x "$(command -v $script)" ]; then
-    GLOBAL_NPM_MISSING+=($script)
-  fi
-done
+# # For each package, add it to the GLOBAL_NPM_MISSING array if it is not globally
+# # available using the canonical cross-platform method.
+# for script in ${GLOBAL_NPM_SCRIPTS[@]}
+# do
+#   if [ ! -x "$(command -v $script)" ]; then
+#     GLOBAL_NPM_MISSING+=($script)
+#   fi
+# done
 
 # If there are missing global NPM packages, install them.
 if [ ${#GLOBAL_NPM_MISSING[@]} -gt 0 ]
@@ -36,6 +36,31 @@ if [ -e .env ]; then
     cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/release.xcconfig
     cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/localrelease.xcconfig
     cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/staging.xcconfig
+  # cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/debug.xcconfig
+  # cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/release.xcconfig
+  # cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/localrelease.xcconfig
+  # cat .env | grep "BRANCH" | sed 's/=/ = /g' > ./ios/staging.xcconfig
+
+  # check BRANCH config
+  # echo ".env BRANCH -> config"
+  
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/release.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
+  # cat .env | grep "CODEPUSH" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
+
+  # # check CODEPUSH config
+  # echo ".env CODEPUSH -> config"
+
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/release.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/localrelease.xcconfig
+  # cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/staging.xcconfig
+
+  # check GOOGLE config
+  # echo ".env GOOGLE -> config"
+
+  echo "✅ .xcconfig files created"
 
     cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/debug.xcconfig
     cat .env | grep "GOOGLE" | sed 's/=/ = /g' >> ./ios/release.xcconfig
