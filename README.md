@@ -1,4 +1,5 @@
-![](https://pbs.twimg.com/profile_banners/1103191459409420288/1573207178/1500x500)
+<!-- markdownlint-disable MD041 -->
+![banner](https://pbs.twimg.com/profile_banners/1103191459409420288/1573207178/1500x500)
 
 ### 🌈️ Rainbow
 
@@ -12,7 +13,7 @@
 
 ### General
 
-- Install NVM or Node.js 14: https://github.com/creationix/nvm
+- Install NVM or Node.js 14: <https://github.com/creationix/nvm>
 - Install all project dependencies with `yarn setup`
 
 ### MacOS
@@ -32,6 +33,7 @@
    ```
 
 4. Install the required bundles and Pods for this project:
+
    ```shell
    yarn install-bundle && yarn install-pods
    ```
@@ -56,7 +58,7 @@
 ## Developing
 
 If you are new to React Native, this is a helpful introduction:
-https://facebook.github.io/react-native/docs/getting-started.html
+<https://facebook.github.io/react-native/docs/getting-started.html>
 
 ### Preflight
 
@@ -68,10 +70,10 @@ https://facebook.github.io/react-native/docs/getting-started.html
 
    Here are some resources to generate your own API keys:
 
-   - Etherscan: https://etherscan.io/apis
-   - Infura: https://infura.io/
-   - ETH Gas Station: https://docs.ethgasstation.info/
-   - Imgix: https://www.imgix.com/
+   - Etherscan: <https://etherscan.io/apis>
+   - Infura: <https://infura.io/>
+   - ETH Gas Station: <https://docs.ethgasstation.info/>
+   - Imgix: <https://www.imgix.com/>
 
 3. Ensure a `google-services.json` has been added to the relevant project
    directory/directories so the compile will not fail.
@@ -80,7 +82,7 @@ https://facebook.github.io/react-native/docs/getting-started.html
    or a self-provided config for a personal Firebase project (third-party
    contributors) registered under the package name `me.rainbow`.
 
-### MacOS
+### MacOS Run
 
 _Note: Darwin versions of the application can only be developed/built on Darwin
 platforms with XCode._
@@ -95,7 +97,7 @@ platforms with XCode._
 
 3. Run the project by clicking the play button.
 
-### Linux
+### Linux Run
 
 _Note: Linux development environments cannot develop or build Darwin versions of the
 project._
@@ -107,6 +109,7 @@ project._
    ```
 
 2. Build/install/start the debug version of the app in an emulator with:
+
    ```shell
    yarn android
    ```
@@ -117,7 +120,7 @@ In order to use code push you must be logged into the correct Microsoft App Cent
 
 ### Prerequisites
 
-```
+```sh
 npm install -g code-push
 code-push login
 ```
@@ -126,7 +129,7 @@ At this point you will be required to log into the account tied to the code push
 
 ### Deployment
 
-```
+```sh
 code-push release-react RainbowWallet-iOS ios -d <DEPLOYMENT>
 ```
 
